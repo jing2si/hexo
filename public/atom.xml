@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Michael`s Blog</title>
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://jing2si.github.io/"/>
+  <updated>2016-05-25T07:16:46.777Z</updated>
+  <id>http://jing2si.github.io/</id>
+  
+  <author>
+    <name>Michael</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>常用正则表达式</title>
+    <link href="http://jing2si.github.io/2016/05/23/common-regular-expression/"/>
+    <id>http://jing2si.github.io/2016/05/23/common-regular-expression/</id>
+    <published>2016-05-23T06:19:40.000Z</published>
+    <updated>2016-05-25T07:16:46.777Z</updated>
+    
+    <content type="html">&lt;h4 id=&quot;匹配手机号&quot;&gt;&lt;a href=&quot;#匹配手机号&quot; class=&quot;headerlink&quot; title=&quot;匹配手机号&quot;&gt;&lt;/a&gt;匹配手机号&lt;/h4&gt;&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;/^&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;((&lt;span class=&quot;number&quot;&gt;3&lt;/span&gt;[&lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;number&quot;&gt;-9&lt;/span&gt;]|&lt;span class=&quot;number&quot;&gt;4&lt;/span&gt;[&lt;span class=&quot;number&quot;&gt;57&lt;/span&gt;]|&lt;span class=&quot;number&quot;&gt;5&lt;/span&gt;[&lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;number&quot;&gt;-35&lt;/span&gt;&lt;span class=&quot;number&quot;&gt;-9&lt;/span&gt;]|&lt;span class=&quot;number&quot;&gt;7&lt;/span&gt;[&lt;span class=&quot;number&quot;&gt;0678&lt;/span&gt;]|&lt;span class=&quot;number&quot;&gt;8&lt;/span&gt;[&lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;number&quot;&gt;-9&lt;/span&gt;])\d&amp;#123;&lt;span class=&quot;number&quot;&gt;8&lt;/span&gt;&amp;#125;$)/g&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h4 id=&quot;获取url参数&quot;&gt;&lt;a href=&quot;#获取url参数&quot; class=&quot;headerlink&quot; title=&quot;获取url参数&quot;&gt;&lt;/a&gt;获取url参数&lt;/h4&gt;&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;getUrlVars&lt;/span&gt;(&lt;span class=&quot;params&quot;&gt;&lt;/span&gt;) &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; vars = &amp;#123;&amp;#125;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &lt;span class=&quot;built_in&quot;&gt;window&lt;/span&gt;.location.href.replace(&lt;span class=&quot;regexp&quot;&gt;/[?&amp;amp;]+([^=&amp;amp;]+)=([^&amp;amp;]*)/gi&lt;/span&gt;, &lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt;(&lt;span class=&quot;params&quot;&gt;match, p1, p2&lt;/span&gt;) &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    vars[p1] = p2;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &amp;#125;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; vars;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;&lt;a href=&quot;https://regex101.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;regex101在线验证&lt;/a&gt;&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;h4 id=&quot;匹配手机号&quot;&gt;&lt;a href=&quot;#匹配手机号&quot; class=&quot;headerlink&quot; title=&quot;匹配手机号&quot;&gt;&lt;/a&gt;匹配手机号&lt;/h4&gt;&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gu
+    
+    </summary>
+    
+      <category term="前端" scheme="http://jing2si.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+      <category term="正则" scheme="http://jing2si.github.io/tags/%E6%AD%A3%E5%88%99/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Windows 如何生成.eslintrc文件</title>
+    <link href="http://jing2si.github.io/2016/05/23/how-to-creat-eslintrc-file-on-windows/"/>
+    <id>http://jing2si.github.io/2016/05/23/how-to-creat-eslintrc-file-on-windows/</id>
+    <published>2016-05-23T05:16:54.000Z</published>
+    <updated>2016-05-23T09:40:22.977Z</updated>
+    
+    <content type="html">&lt;p&gt;运行cmd执行下面命令&lt;br&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;built_in&quot;&gt;echo&lt;/span&gt; &amp;#123;&amp;#125; &amp;gt; .eslintrc&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;运行cmd执行下面命令&lt;br&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;cod
+    
+    </summary>
+    
+      <category term="前端" scheme="http://jing2si.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+      <category term="eslint" scheme="http://jing2si.github.io/tags/eslint/"/>
+    
+  </entry>
+  
+</feed>
