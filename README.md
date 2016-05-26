@@ -1,4 +1,4 @@
-# My Hexo Blog
+# My Hexo
 ```bash
     git clone
     npm install
