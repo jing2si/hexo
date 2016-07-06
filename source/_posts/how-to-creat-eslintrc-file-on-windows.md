@@ -8,3 +8,8 @@ categories: 前端
 ```bash
     echo {} > .eslintrc
 ```
+
+或者运行[cmder](http://cmder.net/)执行下面命令
+```bash
+    touch .eslintrc
+```
