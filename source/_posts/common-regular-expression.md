@@ -8,6 +8,10 @@ categories: 前端
 ```javascript
     /^1((3[0-9]|4[57]|5[0-35-9]|7[0678]|8[0-9])\d{8}$)/.test('电话号码')
 ```
+#### 手机号中间四位换成*号
+```javascript
+    '15876543210'.replace(/(\d{3})\d{4}(\d{4})/, "$1****$2")
+```
 #### 获取url参数
 ```javascript
     function getUrlVars() {
