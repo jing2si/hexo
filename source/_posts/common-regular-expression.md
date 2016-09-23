@@ -22,4 +22,9 @@ categories: 前端
       return vars;
     }
 ```
+#### 匹配不包含某字符串
+```javascript
+    /^(?!.*hello).*$/.test('hell')
+    // true
+```
 [regex101在线验证](https://regex101.com/)
