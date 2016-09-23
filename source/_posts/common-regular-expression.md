@@ -27,4 +27,4 @@ categories: 前端
     /^(?!.*hello).*$/.test('hell')
     // true
 ```
-[regex101在线验证](https://regex101.com/)
+[在线验证正则](https://regex101.com/)
