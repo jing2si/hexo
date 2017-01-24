@@ -27,4 +27,14 @@ categories: 前端
     /^(?!.*hello).*$/.test('hell')
     // true
 ```
+#### 匹配emoji表情
+```javascript
+/\ud83c[\udf00-\udfff]|\ud83d[\udc00-\ude4f]|\ud83d[\ude80-\udeff]/g.test('😀')
+// true
+```
+#### 字符串插入
+```javascript
+'1234'.replace(/(.{2})/, '$1入')
+// 12入34
+```
 [在线验证正则](https://regex101.com/)
