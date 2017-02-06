@@ -22,6 +22,9 @@ categories: 前端
       return vars;
     }
 ```
+
+<!--more-->
+
 #### 匹配不包含某字符串
 ```javascript
     /^(?!.*hello).*$/.test('hell')
