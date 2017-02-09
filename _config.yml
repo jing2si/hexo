@@ -68,9 +68,13 @@ theme: next
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type: git
+- type: git
   repo: git@github.com:jing2si/jing2si.github.io.git
   branch: master
+- type: git
+  repo: git@git.coding.net:jing2si/jing2si.git
+  branch: master
+
 
 # 头像
 avatar: http://en.gravatar.com/userimage/5629045/f6c6528877f7fe9770efe065c91ad69b.png?size=200
