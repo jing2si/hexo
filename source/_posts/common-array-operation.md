@@ -1,13 +1,13 @@
 ---
 title: 常用数组操作
 date: 2017-01-24 17:45:54
-tags: array
+tags: 数组
 categories: 前端
 ---
 
 ```javascript
 /**
- * 数组增加去重功能
+ * 普通数组去重
  * 调用例子：[1, 2, 3, 3].unique() => [1, 2, 3]
  */
 Array.prototype.unique = function () {
@@ -15,26 +15,6 @@ Array.prototype.unique = function () {
     return self.indexOf(value) === index;
   })
 }
-
-/**
- * 数组交集
- * 调用例子：[1, 2, 3].intersection([2, 3, 4]) => [2, 3]
- */
-Array.prototype.intersection = function (array) {
-  return this.filter(function (value) {
-    return array.indexOf(value) !== -1;
-  });
-};
-
-/**
- * 数组差集
- * 调用例子：[1, 2, 3].diff([2, 3, 4]) => [1]
- */
-Array.prototype.diff = function (array) {
-  return this.filter(function (value) {
-    return array.indexOf(value) == -1;
-  });
-};
 
 /**
  * 对象数组去重
@@ -61,5 +41,38 @@ Array.prototype.uniqueBy = function (key) {
     })
   })
   return result;
+}
+
+/**
+ * 数组交集
+ * 调用例子：[1, 2, 3].intersection([2, 3, 4]) => [2, 3]
+ */
+Array.prototype.intersection = function (array) {
+  return this.filter(function (value) {
+    return array.indexOf(value) !== -1;
+  });
+};
+
+/**
+ * 数组差集
+ * 调用例子：[1, 2, 3].diff([2, 3, 4]) => [1]
+ */
+Array.prototype.diff = function (array) {
+  return this.filter(function (value) {
+    return array.indexOf(value) == -1;
+  });
+};
+
+/**
+ * 数组删除指定元素
+ * @param {any} element 需要删除的元素
+ * 调用例子 [1, 2, 3].remove(2) => [1, 3]
+ */
+Array.prototype.remove = function (element) {
+  var index = this.indexOf(element)
+  if (index > -1) {
+    this.splice(index, 1)
+  }
+  return this;
 }
 ```
