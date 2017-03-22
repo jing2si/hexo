@@ -5,7 +5,7 @@
 # Site
 title: Michael`s Blog
 subtitle:
-description: Every day, every moment is beautiful.
+description: 前端开发
 author: Michael
 language: zh-Hans
 timezone:
@@ -78,10 +78,6 @@ deploy:
 
 # 头像
 avatar: http://en.gravatar.com/userimage/5629045/f6c6528877f7fe9770efe065c91ad69b.png?size=200
-
-# 多说评论
-duoshuo_shortname: jing2si
-duoshuo_share: true
 
 #本地搜索
 search:
