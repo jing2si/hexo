@@ -5,6 +5,8 @@ tags: 数组
 categories: 前端
 ---
 
+#### 普通数组去重
+
 ```javascript
 /**
  * 普通数组去重
@@ -15,7 +17,11 @@ Array.prototype.unique = function () {
     return self.indexOf(value) === index;
   })
 }
+```
 
+#### 对象数组去重
+
+```javascript
 /**
  * 对象数组去重
  * @param {String} key 用作比较的对象key
@@ -42,7 +48,13 @@ Array.prototype.uniqueBy = function (key) {
   })
   return result;
 }
+```
 
+<!--more-->
+
+#### 数组交集
+
+```javascript
 /**
  * 数组交集
  * 调用例子：[1, 2, 3].intersection([2, 3, 4]) => [2, 3]
@@ -52,7 +64,11 @@ Array.prototype.intersection = function (array) {
     return array.indexOf(value) !== -1;
   });
 };
+```
 
+#### 数组差集
+
+```javascript
 /**
  * 数组差集
  * 调用例子：[1, 2, 3].diff([2, 3, 4]) => [1]
@@ -62,9 +78,13 @@ Array.prototype.diff = function (array) {
     return array.indexOf(value) == -1;
   });
 };
+```
 
+#### 删除指定元素
+
+```javascript
 /**
- * 数组删除指定元素
+ * 删除指定元素
  * @param {any} element 需要删除的元素
  * 调用例子 [1, 2, 3].remove(2) => [1, 3]
  */
