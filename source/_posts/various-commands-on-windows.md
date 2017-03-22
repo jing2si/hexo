@@ -23,6 +23,8 @@ npm config set ELECTRON_MIRROR https://npm.taobao.org/mirrors/electron/
 npm config set proxy=代理host
 ```
 
+<!--more-->
+
 ## 生成新文件
 
 cmd

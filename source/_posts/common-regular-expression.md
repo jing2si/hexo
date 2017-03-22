@@ -16,6 +16,8 @@ categories: 前端
     '15876543210'.replace(/(\d{3})\d{4}(\d{4})/, "$1****$2")
 ```
 
+<!--more-->
+
 #### 获取url参数
 
 ```javascript
@@ -27,8 +29,6 @@ categories: 前端
       return vars;
     }
 ```
-
-<!--more-->
 
 #### 匹配不包含某字符串
 
