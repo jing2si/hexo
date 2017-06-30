@@ -1,26 +1,22 @@
 language: node_js
 node_js: stable
-# S: Build Lifecycle
 install:
-- npm install
+  - npm install
 before_install:
-- git submodule update --init --remote --recursive
-#before_script:
-# - npm install -g gulp
+  - git submodule update --init --remote --recursive
 script:
-- hexo g
+  - hexo g
 after_script:
-- cd ./public
-- git init
-- git config user.name "Michael"
-- git config user.email "jing2si@gmail.com"
-- git add .
-- git commit -m "site update"
-- git push --force --quiet "https://${github_token}@${GH_REF}" master:master
-# E: Build LifeCycle
+  - cd ./public
+  - git init
+  - git config user.name "Michael"
+  - git config user.email "jing2si@gmail.com"
+  - git add .
+  - git commit -m "site update"
+  - git push --force --quiet "https://${github_token}@${GH_REF}" master:master
 branches:
 only:
-- Source
+  - source
 env:
-global:
-- GH_REF: github.com/jing2si/jing2si.github.io.git
+  global:
+    - GH_REF: github.com/jing2si/jing2si.github.io.git
